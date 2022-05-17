@@ -23,7 +23,7 @@ const Product = ({ data }) => {
     };
 
     return (
-        <div className="h-64 space-y-3 w-64  sm:w-52 md:w-64 mb-4 sm:mb-0  p-3 shadow-sm border-[1px] hover:shadow-lg transition cursor-pointer rounded-md hover:rounded-xl select-none">
+        <div className="h-64 space-y-3 w-72  sm:w-52 md:w-64 mb-4 sm:mb-0  p-3 shadow-sm border-[1px] hover:shadow-lg transition cursor-pointer rounded-md hover:rounded-xl select-none">
             <div className="flex items-center justify-center h-2/4 select-none">
                 <img src={img} alt="" className="h-full object-cover select-none" />
             </div>

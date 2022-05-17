@@ -14,7 +14,7 @@ const SideBar = ({isSideBarOpened,setisSideBarOpened}) => {
         return total;
     };
     return (
-        <div className={`w-10/12 sm:w-5/12 lg:w-3/12 absolute ${isSideBarOpened?'right-0 transition-all transform-scale-80' : '-right-full transition-all'} shadow-lg h-[calc(100vh-72px)] bg-gray-50 flex flex-col justify-between p-4  overflow-scroll  no-scrollbar transition-all pb-10`}>
+        <div className={`w-10/12 sm:w-5/12 lg:w-3/12 absolute ${isSideBarOpened?'right-0 transition-all transform-scale-80' : '-right-full transition-all'} shadow-lg h-[calc(95vh-72px)] bg-gray-50 flex flex-col justify-between p-4  overflow-scroll  no-scrollbar transition-all pb-16`}>
             {items.length > 0 ? (
                 <>
                     <div className="h-[95%] overflow-scroll  no-scrollbar">
@@ -26,7 +26,7 @@ const SideBar = ({isSideBarOpened,setisSideBarOpened}) => {
                         </div>
                     </div>
                     <div className="">
-                        <div className="flex items-center justify-between ">
+                        <div className="flex items-center justify-between pt-2">
                             <p className="text-sm text-gray-700 font-bold ">
                                 Total Price:
                             </p>

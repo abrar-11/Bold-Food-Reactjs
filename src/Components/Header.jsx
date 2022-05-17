@@ -12,12 +12,12 @@ const Header = () => {
     const [isSideBarOpened, setisSideBarOpened] = useState(false);
 
     return (
-        <div className="w-full fixed top-0 left-0 right-0 bg-white shadow-sm select-none">
-            <div className="w-10/12   flex items-center justify-between h-[72px] mx-auto cursor-pointer select-none">
+        <div className="w-full fixed top-0 left-0 right-0 bg-white shadow-sm  ">
+            <div className="w-10/12   flex items-center justify-between h-[72px] mx-auto cursor-pointer  ">
                 <img
                     src="/images/logo.svg"
                     alt=""
-                    className=" h-full select-none"
+                    className=" h-full  "
                     onClick={() => navigate("/")}
                 />
 
@@ -27,11 +27,11 @@ const Header = () => {
 
                 {user && <img src={user.photoURL} alt="" className="w-5 h-5" onClick={()=>signOutUSer()}/>} */}
                 <div
-                    className=" w-8 relative select-none"
+                    className=" w-8 relative  "
                     onClick={() => setisSideBarOpened(!isSideBarOpened)}
                 >
-                    <ShoppingCartIcon className="text-gray-400 cursor-pointer hover:animate-pulse select-none" />
-                    <span className="absolute w-6 h-6 -top-3  -right-6 bg-emerald-200 rounded -full flex items-center justify-center text-gray-900 text-xs select-none">
+                    <ShoppingCartIcon className="text-gray-400 cursor-pointer hover:animate-pulse  " />
+                    <span className="absolute w-6 h-6 -top-3  -right-6 bg-emerald-200 rounded -full flex items-center justify-center text-gray-900 text-xs  ">
                         {items.length}
                     </span>
                 </div>
