@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <div className="w-full fixed top-0 left-0 right-0 bg-white shadow-sm select-none">
-            <div className="w-10/12   flex items-center justify-between h-[72px] mx-auto cursor-pointer">
+            <div className="w-10/12   flex items-center justify-between h-[72px] mx-auto cursor-pointer select-none">
                 <img
                     src="/images/logo.svg"
                     alt=""
@@ -30,7 +30,7 @@ const Header = () => {
                     className=" w-8 relative select-none"
                     onClick={() => setisSideBarOpened(!isSideBarOpened)}
                 >
-                    <ShoppingCartIcon className="text-gray-400 cursor-pointer hover:animate-pulse " />
+                    <ShoppingCartIcon className="text-gray-400 cursor-pointer hover:animate-pulse select-none" />
                     <span className="absolute w-6 h-6 -top-3  -right-6 bg-emerald-200 rounded -full flex items-center justify-center text-gray-900 text-xs select-none">
                         {items.length}
                     </span>
